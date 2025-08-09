@@ -14,7 +14,10 @@ It leverages the power of Large Language Models (LLMs) through the GROQ inferenc
 - **📈 Monitoring & Observability:** Integrated with Prometheus for metrics collection and Grafana for real-time visualization and dashboarding.
 
 ## 📦 Installating & Running Locally
-- **Clone this repo & CD FLIPKART-PRODUCT-RECOMMENDER-SYSTEM :** ```git clone https://github.com/P-RajaRamesh/FLIPKART-PRODUCT-RECOMMENDER-SYSTEM.git```
+- **Clone this repo & CD FLIPKART-PRODUCT-RECOMMENDER-SYSTEM :**
+  ```
+  git clone https://github.com/P-RajaRamesh/FLIPKART-PRODUCT-RECOMMENDER-SYSTEM.git
+  ```
 - **Create Virtual Environment :** ```conda create -p venv1 python==3.10```
 - **Activate Virtual Environment :** ```conda activate venv1\```
 - **Install Requirements :** ```pip install -e .```
