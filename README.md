@@ -205,7 +205,7 @@ git push origin main
 ---
 
 ### 10. PROMETHEUS AND GRAFANA MONITORING OF YOUR APP
-  - **Prometheus**
+  - **Prometheus** configuration and deployment file applying to Kubernetes cluster
       - Open another SSH terminal and enter : ```cd FLIPKART-PRODUCT-RECOMMENDER-SYSTEM```
       - Create another namespace for monitoring (previously using default namespace) : ```kubectl create namespace monitoring```
       - Verify namespace creation : ```kubectl get ns```
@@ -219,7 +219,7 @@ git push origin main
         ```
       - To see prometheus running under monitoring namespace : ```kubectl get pods -n monitoring```
 
-  - **Grafana**
+  - **Grafana** deployment file applying to Kubernetes cluster
       - Apply Kubernetes grafana deployment file to your cluster :
         ```
         kubectl apply -f grafana/grafana-deployment.yaml
@@ -238,7 +238,7 @@ git push origin main
         kubectl port-forward --address 0.0.0.0 svc/grafana-service -n monitoring 3000:3000
         ```
 
-  - **Configure Grafana**
+  - **Configure Grafana** - Username:Password --> admin:admin
      - Now copy VM External IP in Google Cloud & append ```:3000``` and checkout grafana dashboards...
      - Go to Settings -> Data Sources -> Add Data Source ->
      - Choose Prometheus -> Enter URL: http://prometheus-service.monitoring.svc.cluster.local:9090
