@@ -243,4 +243,4 @@ git push origin main
      - Go to Settings -> Data Sources -> Add Data Source ->
      - Choose Prometheus -> Enter URL: http://prometheus-service.monitoring.svc.cluster.local:9090
      - Click Save & Test (Green success mesaage shown...)
-     - Now create various visualization & dashboards.
+     - Now create various visualizations & dashboards.
